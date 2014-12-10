@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="108dp"
+	    android:orientation="horizontal" >
+
+	    <Button
+	        android:id="@+id/buttonContent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Anleitung" />
+	
+	    <Button
+	        android:id="@+id/buttonCopyright"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Copyright" />
+	</LinearLayout>
+    <ListView
+        android:id="@+id/listViewIntent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+    </ListView>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="108dp"
+	    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:id="@+id/labelCountry"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="" />
+
+	    <Button
+	        android:id="@+id/buttonCountry"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Land auswählen" />
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="108dp"
+	    android:orientation="horizontal" >
+    
+	    <EditText
+	        android:id="@+id/editNumber"
+	        android:layout_width="152dp"
+	        android:layout_height="wrap_content"
+	        android:ems="10" />
+	    <Button
+	        android:id="@+id/buttonDial"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Dial" />
+	</LinearLayout>
+</LinearLayout>

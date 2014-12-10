@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/bg_card" 
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/bg_card"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pass" />
+        
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+      
+    </TableRow>
+
+    <LinearLayout
+        android:background="@drawable/border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</TableLayout>

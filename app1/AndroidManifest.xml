@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+   	<uses-permission android:name="android.permission.CALL_PHONE"/>
+ 	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" /> 
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />   
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />     
+	<application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.app1.ExampleListActivity"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.app1.day1.HelloActivity"></activity>
+        <activity android:name="com.example.app1.day1.Aktiv2Activity"></activity>
+        <activity android:name="com.example.app1.day1.LoginActivity"></activity>
+        <activity android:name="com.example.app1.day1.UrlListActivity"></activity>
+        <activity android:name="com.example.app1.day1.Intent1Activity"></activity>
+        <activity android:name="com.example.app1.day1.Intent2Activity"></activity>
+        <activity android:name="com.example.app1.day1.ContentActivity"></activity>
+        <activity android:name="com.example.app1.day1.CopyrightActivity"></activity>
+        <activity android:name="com.example.app1.day1.CatchCallActivity">
+            <intent-filter>
+			<action android:name="android.intent.action.DIAL"  />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="tel"/>
+            </intent-filter>        
+          </activity>
+        <activity android:name="com.example.app1.day2.DialogActivity"></activity>
+        <activity android:name="com.example.app1.day2.DialogDimensionActivity" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="com.example.app1.day2.MenuActivity"></activity>
+        <activity android:name="com.example.app1.day2.CountryListActivity"></activity>
+        <activity android:name="com.example.app1.day2.FilesActivity"></activity>
+        <activity android:name="com.example.app1.day3.CustomViewMainActivity"></activity>
+        <activity android:name="com.example.app1.day3.DBActivity"></activity>
+        <activity android:name="com.example.app1.day3.NotificationMainActivity"></activity>
+        <activity android:name="com.example.app1.day3.DBDivisionListActivity" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="com.example.app1.day3.DBEmployeeListActivity" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="com.example.app1.day3.NotificationReceiverActivity"></activity>
+        <activity android:name="com.example.app1.day4.SMSMainActivity"></activity>
+        <activity android:name="com.example.app1.day4.WebserviceActivity"></activity>
+
+        <activity android:name="com.example.app1.home.PositionActivity"></activity>
+        <activity android:name="com.example.app1.home.CardListActivity"></activity>
+        
+		<receiver android:name="com.example.app1.day4.SMSReceiver" >
+			<intent-filter android:priority="100" >
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+		
+		<meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+   </application>
+    
+    
+</manifest>
