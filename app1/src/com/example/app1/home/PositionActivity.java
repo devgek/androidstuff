@@ -7,10 +7,13 @@ import java.util.List;
 import java.util.Locale;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.IntentSender;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,13 +26,18 @@ import com.example.app1.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesClient;
 import com.google.android.gms.common.GooglePlayServicesClient.ConnectionCallbacks;
-import com.google.android.gms.location.LocationClient;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 public class PositionActivity extends Activity implements
 GooglePlayServicesClient.OnConnectionFailedListener, ConnectionCallbacks{
     private final static int CONNECTION_FAILURE_RESOLUTION_REQUEST = 9000;
 
-    private LocationClient locationClient;
+//    private GooglePlayServicesClient locationClient;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -48,10 +56,39 @@ GooglePlayServicesClient.OnConnectionFailedListener, ConnectionCallbacks{
 				TextView tvTime = (TextView)findViewById(R.id.textPositionDateTime);
 				TextView tvWhere = (TextView)findViewById(R.id.textPositionWhere);
 
-//				LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-//				Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+				LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+				boolean enabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+				if (enabled) {
+					locationManager.requestSingleUpdate(LocationManager.GPS_PROVIDER, new LocationListener() {
+						
+						@Override
+						public void onStatusChanged(String provider, int status, Bundle extras) {
+							// TODO Auto-generated method stub
+							
+						}
+						
+						@Override
+						public void onProviderEnabled(String provider) {
+							// TODO Auto-generated method stub
+							
+						}
+						
+						@Override
+						public void onProviderDisabled(String provider) {
+							// TODO Auto-generated method stub
+							
+						}
+						
+						@Override
+						public void onLocationChanged(Location location) {
+							// TODO Auto-generated method stub
+							
+						}
+					}, null);
+				}
+				Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
-				Location location = locationClient.getLastLocation();
+//				Location location = locationClient.getLastLocation();
 				
 				if (location != null) {
 					double lat = location.getLatitude();
@@ -68,6 +105,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, ConnectionCallbacks{
 					Address address = getAddress(location);
 					if (address != null) {
 						tvWhere.setText(address.getPostalCode() + " " + address.getLocality() + " " +address.getAddressLine(0));
+						showPositionInMap(location);
 					}
 				}
 				else {
@@ -77,7 +115,15 @@ GooglePlayServicesClient.OnConnectionFailedListener, ConnectionCallbacks{
 
 		});
 
-		locationClient = new LocationClient(this, this, this);
+//		locationClient = new GooglePlayServicesClient(this, this, this);
+	}
+	
+	private void showPositionInMap(Location location) {
+		GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(R.id.my_map)).getMap();
+		final LatLng position = new LatLng(location.getLatitude(), location.getLongitude());
+		Marker hereMarker = map.addMarker(new MarkerOptions().position(position).title("Du bist hier"));
+		map.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 17));
+		map.getUiSettings().setZoomControlsEnabled(true);
 	}
 	
 	private Address getAddress(Location location) {
@@ -105,7 +151,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, ConnectionCallbacks{
     protected void onStart() {
         super.onStart();
         // Connect the client.
-        locationClient.connect();
+//        locationClient.connect();
     }
     /*
      * Called when the Activity is no longer visible.
@@ -113,7 +159,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, ConnectionCallbacks{
     @Override
     protected void onStop() {
         // Disconnecting the client invalidates it.
-        locationClient.disconnect();
+//        locationClient.disconnect();
         super.onStop();
     }
 

@@ -21,7 +21,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adSize=0x7f010006;
+        public static final int adSize=0x7f010000;
         /** 
     A comma-separated list of the supported ad sizes. The sizes must be one of
     BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
@@ -34,7 +34,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adSizes=0x7f010007;
+        public static final int adSizes=0x7f010001;
         /**  The ad unit ID. 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -43,8 +43,20 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adUnitId=0x7f010008;
-        /**  Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
+        public static final int adUnitId=0x7f010002;
+        /**  Theme to be used for the Wallet selector 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int appTheme=0x7f010016;
+        /**  The appearance of the buy button 
          <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -56,7 +68,7 @@ containing a value of this type.
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonAppearance=0x7f01001e;
+        public static final int buyButtonAppearance=0x7f01001d;
         /**  Height of the buy button. This includes an 8dp padding (4dp on each side) used for
              pressed and focused states of the button. The value can be a specific height, e.g.
              "48dp", or special values "match_parent" and "wrap_content". 
@@ -78,8 +90,8 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonHeight=0x7f01001b;
-        /**  Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
+        public static final int buyButtonHeight=0x7f01001a;
+        /**  The text on the buy button 
          <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -89,9 +101,10 @@ containing a value of this type.
 <tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
 <tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
+<tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonText=0x7f01001d;
+        public static final int buyButtonText=0x7f01001c;
         /**  Width of the buy button. This includes an 8dp padding (4dp on each side) used for
              pressed and focused states of the button. The value can be a specific width, e.g.
              "300dp", or special values "match_parent" and "wrap_content". 
@@ -113,7 +126,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonWidth=0x7f01001c;
+        public static final int buyButtonWidth=0x7f01001b;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -121,7 +134,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraBearing=0x7f01000a;
+        public static final int cameraBearing=0x7f010007;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -129,7 +142,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLat=0x7f01000b;
+        public static final int cameraTargetLat=0x7f010008;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -137,7 +150,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLng=0x7f01000c;
+        public static final int cameraTargetLng=0x7f010009;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -145,7 +158,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTilt=0x7f01000d;
+        public static final int cameraTilt=0x7f01000a;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -153,18 +166,18 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraZoom=0x7f01000e;
-        /**  Layout to build a Header. Default value is @layout/base_header_layout 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+        public static final int cameraZoom=0x7f01000b;
+        /**  Background color for CardView. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
          */
-        public static final int card_header_layout_resourceID=0x7f010002;
-        /**  Layout to build a card. Default value is  @layout/card_base_layout 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int card_layout_resourceID=0x7f010000;
-        /**  Height of divider used in the list 
+        public static final int cardBackgroundColor=0x7f010025;
+        /**  Corner radius for CardView. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -174,17 +187,113 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int card_list_item_dividerHeight=0x7f010005;
-        /**  Layout to build a shadow. Default value is @layout/base_shadow_layout 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+        public static final int cardCornerRadius=0x7f010026;
+        /**  Elevation for CardView. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
          */
-        public static final int card_shadow_layout_resourceID=0x7f010001;
-        /**  Layout to build a Thumbnail. Default value is @layout/base_thumbnail_layout 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+        public static final int cardElevation=0x7f010027;
+        /**  Maximum Elevation for CardView. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
          */
-        public static final int card_thumbnail_layout_resourceID=0x7f010003;
+        public static final int cardMaxElevation=0x7f010028;
+        /**  Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardPreventCornerOverlap=0x7f01002a;
+        /**  Add padding in API v21+ as well to have the same measurements with previous versions. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardUseCompatPadding=0x7f010029;
+        /** 
+        Whether or not this view should have a circular clip applied
+        
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circleCrop=0x7f010005;
+        /**  Inner padding between the edges of the Card and children of the CardView. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPadding=0x7f01002b;
+        /**  Inner padding between the bottom edge of the Card and children of the CardView. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingBottom=0x7f01002f;
+        /**  Inner padding between the left edge of the Card and children of the CardView. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingLeft=0x7f01002c;
+        /**  Inner padding between the right edge of the Card and children of the CardView. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingRight=0x7f01002d;
+        /**  Inner padding between the top edge of the Card and children of the CardView. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingTop=0x7f01002e;
         /**  Google Wallet environment to use 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -197,7 +306,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int environment=0x7f010018;
+        public static final int environment=0x7f010017;
         /**  Fragment mode 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -209,17 +318,47 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int fragmentMode=0x7f01001a;
+        public static final int fragmentMode=0x7f010019;
         /**  A style resource specifing attributes to customize the look and feel of WalletFragment 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int fragmentStyle=0x7f010019;
-        /**  Layout used by card in a ListView. Default value is  @layout/list_card_layout 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+        public static final int fragmentStyle=0x7f010018;
+        /** 
+        The fixed aspect ratio to use in aspect ratio adjustments.
+        
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
          */
-        public static final int list_card_layout_resourceID=0x7f010004;
+        public static final int imageAspectRatio=0x7f010004;
+        /** 
+        What kind of aspect ratio adjustment to do.  It must be one of "none", "adjust_width",
+        or "adjust_height".
+        
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
+<tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int imageAspectRatioAdjust=0x7f010003;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int liteMode=0x7f01000c;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -233,31 +372,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int mapType=0x7f010009;
+        public static final int mapType=0x7f010006;
         /**  Masked wallet details background 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int maskedWalletDetailsBackground=0x7f010021;
+        public static final int maskedWalletDetailsBackground=0x7f010020;
         /**  "Change" button background in masked wallet details view 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int maskedWalletDetailsButtonBackground=0x7f010023;
+        public static final int maskedWalletDetailsButtonBackground=0x7f010022;
         /**  TextAppearance for the "Change" button in masked wallet details view 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsButtonTextAppearance=0x7f010022;
+        public static final int maskedWalletDetailsButtonTextAppearance=0x7f010021;
         /**  TextAppearance for headers describing masked wallet details 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f010020;
+        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f01001f;
         /**  Type of the wallet logo image in masked wallet details view 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -269,7 +408,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int maskedWalletDetailsLogoImageType=0x7f010025;
+        public static final int maskedWalletDetailsLogoImageType=0x7f010024;
         /**  Color of the Google Wallet logo text in masked wallet details view 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -279,24 +418,12 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maskedWalletDetailsLogoTextColor=0x7f010024;
+        public static final int maskedWalletDetailsLogoTextColor=0x7f010023;
         /**  TextAppearance for masked wallet details 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsTextAppearance=0x7f01001f;
-        /**  Theme to be used for the Wallet selector 
-         <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
-<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
-</table>
-         */
-        public static final int theme=0x7f010017;
+        public static final int maskedWalletDetailsTextAppearance=0x7f01001e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -304,7 +431,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiCompass=0x7f01000f;
+        public static final int uiCompass=0x7f01000d;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -312,7 +439,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiRotateGestures=0x7f010010;
+        public static final int uiMapToolbar=0x7f010015;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -320,7 +447,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiScrollGestures=0x7f010011;
+        public static final int uiRotateGestures=0x7f01000e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -328,7 +455,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiTiltGestures=0x7f010012;
+        public static final int uiScrollGestures=0x7f01000f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -336,7 +463,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomControls=0x7f010013;
+        public static final int uiTiltGestures=0x7f010010;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -344,7 +471,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomGestures=0x7f010014;
+        public static final int uiZoomControls=0x7f010011;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -352,7 +479,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int useViewLifecycle=0x7f010015;
+        public static final int uiZoomGestures=0x7f010012;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -360,68 +487,63 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int zOrderOnTop=0x7f010016;
+        public static final int useViewLifecycle=0x7f010013;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int zOrderOnTop=0x7f010014;
     }
     public static final class color {
-        public static final int card_activated=0x7f050006;
-        public static final int card_activated_kitkat=0x7f050009;
-        /**  Card Color 
+        /**  Background color for dark CardView. 
          */
-        public static final int card_background=0x7f050000;
-        public static final int card_backgroundExpand=0x7f050002;
-        public static final int card_background_header=0x7f050001;
-        public static final int card_base_cardwithlist_background_list_color=0x7f05000c;
-        /**  Used by card with list 
+        public static final int cardview_dark_background=0x7f070018;
+        /**  Background color for light CardView. 
          */
-        public static final int card_base_cardwithlist_divider_color=0x7f05000b;
-        public static final int card_expand_title_color=0x7f050004;
-        public static final int card_foreground_activated=0x7f050007;
-        public static final int card_foreground_activated_kitkat=0x7f05000a;
-        /**  Used by selector 
+        public static final int cardview_light_background=0x7f070017;
+        /**  Shadow color for the furthest pixels around CardView. 
          */
-        public static final int card_pressed=0x7f050005;
-        public static final int card_pressed_kitkat=0x7f050008;
-        /**  Used by sectioned list 
+        public static final int cardview_shadow_end_color=0x7f07001a;
+        /**  Shadow color for the first pixels around CardView. 
          */
-        public static final int card_section_container_color=0x7f05000d;
-        public static final int card_section_title_color=0x7f05000e;
-        public static final int card_text_color_header=0x7f050003;
-        public static final int card_undobar_material_background_color=0x7f050010;
-        public static final int card_undobar_material_text_color=0x7f05000f;
-        public static final int common_action_bar_splitter=0x7f05001a;
+        public static final int cardview_shadow_start_color=0x7f070019;
+        public static final int common_action_bar_splitter=0x7f070009;
         /**  Sign-in Button Colors 
          */
-        public static final int common_signin_btn_dark_text_default=0x7f050011;
-        public static final int common_signin_btn_dark_text_disabled=0x7f050013;
-        public static final int common_signin_btn_dark_text_focused=0x7f050014;
-        public static final int common_signin_btn_dark_text_pressed=0x7f050012;
-        public static final int common_signin_btn_default_background=0x7f050019;
-        public static final int common_signin_btn_light_text_default=0x7f050015;
-        public static final int common_signin_btn_light_text_disabled=0x7f050017;
-        public static final int common_signin_btn_light_text_focused=0x7f050018;
-        public static final int common_signin_btn_light_text_pressed=0x7f050016;
-        public static final int common_signin_btn_text_dark=0x7f050028;
-        public static final int common_signin_btn_text_light=0x7f050029;
-        public static final int wallet_bright_foreground_disabled_holo_light=0x7f050020;
+        public static final int common_signin_btn_dark_text_default=0x7f070000;
+        public static final int common_signin_btn_dark_text_disabled=0x7f070002;
+        public static final int common_signin_btn_dark_text_focused=0x7f070003;
+        public static final int common_signin_btn_dark_text_pressed=0x7f070001;
+        public static final int common_signin_btn_default_background=0x7f070008;
+        public static final int common_signin_btn_light_text_default=0x7f070004;
+        public static final int common_signin_btn_light_text_disabled=0x7f070006;
+        public static final int common_signin_btn_light_text_focused=0x7f070007;
+        public static final int common_signin_btn_light_text_pressed=0x7f070005;
+        public static final int common_signin_btn_text_dark=0x7f07001b;
+        public static final int common_signin_btn_text_light=0x7f07001c;
+        public static final int wallet_bright_foreground_disabled_holo_light=0x7f07000f;
         /** 
          Wallet colors to support consistent Wallet fragment holo dark UI in client application
          regardless of the theme and device type
     
          */
-        public static final int wallet_bright_foreground_holo_dark=0x7f05001b;
-        public static final int wallet_bright_foreground_holo_light=0x7f050021;
-        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f05001d;
-        public static final int wallet_dim_foreground_holo_dark=0x7f05001c;
-        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f05001f;
-        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f05001e;
-        public static final int wallet_highlighted_text_holo_dark=0x7f050025;
-        public static final int wallet_highlighted_text_holo_light=0x7f050024;
-        public static final int wallet_hint_foreground_holo_dark=0x7f050023;
-        public static final int wallet_hint_foreground_holo_light=0x7f050022;
-        public static final int wallet_holo_blue_light=0x7f050026;
-        public static final int wallet_link_text_light=0x7f050027;
-        public static final int wallet_primary_text_holo_light=0x7f05002a;
-        public static final int wallet_secondary_text_holo_dark=0x7f05002b;
+        public static final int wallet_bright_foreground_holo_dark=0x7f07000a;
+        public static final int wallet_bright_foreground_holo_light=0x7f070010;
+        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f07000c;
+        public static final int wallet_dim_foreground_holo_dark=0x7f07000b;
+        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f07000e;
+        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f07000d;
+        public static final int wallet_highlighted_text_holo_dark=0x7f070014;
+        public static final int wallet_highlighted_text_holo_light=0x7f070013;
+        public static final int wallet_hint_foreground_holo_dark=0x7f070012;
+        public static final int wallet_hint_foreground_holo_light=0x7f070011;
+        public static final int wallet_holo_blue_light=0x7f070015;
+        public static final int wallet_link_text_light=0x7f070016;
+        public static final int wallet_primary_text_holo_light=0x7f07001d;
+        public static final int wallet_secondary_text_holo_dark=0x7f07001e;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -430,487 +552,336 @@ containing a value of this type.
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f060037;
-        public static final int activity_vertical_margin=0x7f060038;
-        public static final int card_background_default_radius=0x7f060001;
-        public static final int card_base_cardwithlist_dividerHeight=0x7f060032;
-        /**  Card with list 
+        public static final int activity_horizontal_margin=0x7f090003;
+        public static final int activity_vertical_margin=0x7f090004;
+        /**  Inset shadow for RoundRectDrawableWithShadow. It is used to avoid gaps between the card
+     and the shadow. 
          */
-        public static final int card_base_cardwithlist_layout_leftmargin=0x7f06002e;
-        public static final int card_base_cardwithlist_layout_rightmargin=0x7f06002f;
-        public static final int card_base_cardwithlist_list_margin_left=0x7f060031;
-        public static final int card_base_cardwithlist_list_margin_top=0x7f060030;
-        /**  Card 
+        public static final int cardview_compat_inset_shadow=0x7f090002;
+        /**  Elevation value to use for CardViews. Pre-L, it is equal to shadow size. 
          */
-        public static final int card_base_empty_height=0x7f060000;
-        public static final int card_content_outer_view_margin_bottom=0x7f060017;
-        public static final int card_content_outer_view_margin_left=0x7f060016;
-        public static final int card_content_outer_view_margin_right=0x7f060018;
-        /**  Content 
+        public static final int cardview_default_elevation=0x7f090001;
+        /**  Default radius for CardView corners. 
          */
-        public static final int card_content_outer_view_margin_top=0x7f060015;
-        /**  Expand 
-         */
-        public static final int card_expand_layout_padding=0x7f060022;
-        public static final int card_expand_simple_title_paddingLeft=0x7f060023;
-        public static final int card_expand_simple_title_paddingRight=0x7f060024;
-        public static final int card_expand_simple_title_text_size=0x7f060025;
-        public static final int card_header_button_margin_right=0x7f06000e;
-        public static final int card_header_button_overflow_margin_right=0x7f06000f;
-        public static final int card_header_button_padding_bottom=0x7f06000c;
-        /** Button Header 
-         */
-        public static final int card_header_button_padding_left=0x7f06000a;
-        public static final int card_header_button_padding_right=0x7f06000b;
-        public static final int card_header_button_padding_top=0x7f06000d;
-        public static final int card_header_outer_view_margin_bottom=0x7f060008;
-        public static final int card_header_outer_view_margin_left=0x7f060007;
-        public static final int card_header_outer_view_margin_right=0x7f060009;
-        /**  Header 
-         */
-        public static final int card_header_outer_view_margin_top=0x7f060006;
-        public static final int card_header_simple_title_margin_bottom=0x7f060014;
-        /**  Title Header 
-         */
-        public static final int card_header_simple_title_margin_left=0x7f060010;
-        public static final int card_header_simple_title_margin_right=0x7f060013;
-        public static final int card_header_simple_title_margin_top=0x7f060011;
-        public static final int card_header_simple_title_text_size=0x7f060012;
-        public static final int card_main_layout_view_margin_bottom=0x7f060004;
-        public static final int card_main_layout_view_margin_left=0x7f060003;
-        public static final int card_main_layout_view_margin_right=0x7f060005;
-        /**  Main 
-         */
-        public static final int card_main_layout_view_margin_top=0x7f060002;
-        public static final int card_main_simple_title_margin_left=0x7f060019;
-        public static final int card_main_simple_title_margin_top=0x7f06001a;
-        public static final int card_section_container_padding_left=0x7f060034;
-        public static final int card_section_container_padding_right=0x7f060035;
-        /** Section 
-         */
-        public static final int card_section_title=0x7f060033;
-        public static final int card_section_title_margin_top=0x7f060036;
-        /**  Shadow 
-         */
-        public static final int card_shadow_height=0x7f06001b;
-        public static final int card_shadow_view_margin_bottom=0x7f06001e;
-        public static final int card_shadow_view_margin_left=0x7f06001d;
-        public static final int card_shadow_view_margin_right=0x7f06001f;
-        public static final int card_shadow_view_margin_top=0x7f06001c;
-        public static final int card_thumbnail_height=0x7f060021;
-        /**  Thumbnail 
-         */
-        public static final int card_thumbnail_width=0x7f060020;
-        public static final int grid_card_padding_bottom=0x7f06002c;
-        /**  Grid 
-         */
-        public static final int grid_card_padding_left=0x7f06002a;
-        public static final int grid_card_padding_right=0x7f06002b;
-        public static final int grid_card_padding_top=0x7f06002d;
-        public static final int list_card_padding_bottom=0x7f060028;
-        /**  List 
-         */
-        public static final int list_card_padding_left=0x7f060026;
-        public static final int list_card_padding_right=0x7f060027;
-        public static final int list_card_padding_top=0x7f060029;
+        public static final int cardview_default_radius=0x7f090000;
     }
     public static final class drawable {
-        public static final int activated_background_card=0x7f020000;
-        public static final int activated_background_kitkat_card=0x7f020001;
-        public static final int activated_foreground_card=0x7f020002;
-        public static final int activated_foreground_kitkat_card=0x7f020003;
-        public static final int bg_card=0x7f020004;
-        public static final int border=0x7f020005;
-        public static final int card_background=0x7f020006;
-        public static final int card_foreground_kitkat_selector=0x7f020007;
-        public static final int card_foreground_selector=0x7f020008;
-        public static final int card_kitkat_selector=0x7f020009;
-        public static final int card_menu_button_expand=0x7f02000a;
-        public static final int card_menu_button_overflow=0x7f02000b;
-        public static final int card_menu_button_rounded_overflow=0x7f02000c;
-        public static final int card_multichoice_selector=0x7f02000d;
-        public static final int card_selector=0x7f02000e;
-        public static final int card_shadow=0x7f02000f;
-        public static final int card_undo=0x7f020010;
-        public static final int common_signin_btn_icon_dark=0x7f020011;
-        public static final int common_signin_btn_icon_disabled_dark=0x7f020012;
-        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020013;
-        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020014;
-        public static final int common_signin_btn_icon_disabled_light=0x7f020015;
-        public static final int common_signin_btn_icon_focus_dark=0x7f020016;
-        public static final int common_signin_btn_icon_focus_light=0x7f020017;
-        public static final int common_signin_btn_icon_light=0x7f020018;
-        public static final int common_signin_btn_icon_normal_dark=0x7f020019;
-        public static final int common_signin_btn_icon_normal_light=0x7f02001a;
-        public static final int common_signin_btn_icon_pressed_dark=0x7f02001b;
-        public static final int common_signin_btn_icon_pressed_light=0x7f02001c;
-        public static final int common_signin_btn_text_dark=0x7f02001d;
-        public static final int common_signin_btn_text_disabled_dark=0x7f02001e;
-        public static final int common_signin_btn_text_disabled_focus_dark=0x7f02001f;
-        public static final int common_signin_btn_text_disabled_focus_light=0x7f020020;
-        public static final int common_signin_btn_text_disabled_light=0x7f020021;
-        public static final int common_signin_btn_text_focus_dark=0x7f020022;
-        public static final int common_signin_btn_text_focus_light=0x7f020023;
-        public static final int common_signin_btn_text_light=0x7f020024;
-        public static final int common_signin_btn_text_normal_dark=0x7f020025;
-        public static final int common_signin_btn_text_normal_light=0x7f020026;
-        public static final int common_signin_btn_text_pressed_dark=0x7f020027;
-        public static final int common_signin_btn_text_pressed_light=0x7f020028;
-        public static final int ic_launcher=0x7f020029;
-        public static final int ic_menu_expand_card_dark_normal=0x7f02002a;
-        public static final int ic_menu_expand_card_dark_pressed=0x7f02002b;
-        public static final int ic_menu_overflow_card_dark_normal=0x7f02002c;
-        public static final int ic_menu_overflow_card_dark_pressed=0x7f02002d;
-        public static final int ic_menu_overflow_card_rounded_dark_normal=0x7f02002e;
-        public static final int ic_menu_overflow_card_rounded_dark_pressed=0x7f02002f;
-        public static final int ic_plusone_medium_off_client=0x7f020030;
-        public static final int ic_plusone_small_off_client=0x7f020031;
-        public static final int ic_plusone_standard_off_client=0x7f020032;
-        public static final int ic_plusone_tall_off_client=0x7f020033;
-        public static final int ic_undobar_undo=0x7f020034;
-        public static final int powered_by_google_dark=0x7f020035;
-        public static final int powered_by_google_light=0x7f020036;
-        public static final int pressed_background_card=0x7f020037;
-        public static final int pressed_background_kitkat_card=0x7f020038;
-        public static final int rectangle=0x7f020039;
-        public static final int undobar=0x7f02003a;
-        public static final int undobar_button_focused=0x7f02003b;
-        public static final int undobar_button_pressed=0x7f02003c;
-        public static final int undobar_divider=0x7f02003d;
+        public static final int bg_card=0x7f020000;
+        public static final int border=0x7f020001;
+        public static final int common_full_open_on_phone=0x7f020002;
+        public static final int common_ic_googleplayservices=0x7f020003;
+        public static final int common_signin_btn_icon_dark=0x7f020004;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f020005;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020006;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020007;
+        public static final int common_signin_btn_icon_disabled_light=0x7f020008;
+        public static final int common_signin_btn_icon_focus_dark=0x7f020009;
+        public static final int common_signin_btn_icon_focus_light=0x7f02000a;
+        public static final int common_signin_btn_icon_light=0x7f02000b;
+        public static final int common_signin_btn_icon_normal_dark=0x7f02000c;
+        public static final int common_signin_btn_icon_normal_light=0x7f02000d;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f02000e;
+        public static final int common_signin_btn_icon_pressed_light=0x7f02000f;
+        public static final int common_signin_btn_text_dark=0x7f020010;
+        public static final int common_signin_btn_text_disabled_dark=0x7f020011;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020012;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f020013;
+        public static final int common_signin_btn_text_disabled_light=0x7f020014;
+        public static final int common_signin_btn_text_focus_dark=0x7f020015;
+        public static final int common_signin_btn_text_focus_light=0x7f020016;
+        public static final int common_signin_btn_text_light=0x7f020017;
+        public static final int common_signin_btn_text_normal_dark=0x7f020018;
+        public static final int common_signin_btn_text_normal_light=0x7f020019;
+        public static final int common_signin_btn_text_pressed_dark=0x7f02001a;
+        public static final int common_signin_btn_text_pressed_light=0x7f02001b;
+        public static final int ic_launcher=0x7f02001c;
+        public static final int ic_plusone_medium_off_client=0x7f02001d;
+        public static final int ic_plusone_small_off_client=0x7f02001e;
+        public static final int ic_plusone_standard_off_client=0x7f02001f;
+        public static final int ic_plusone_tall_off_client=0x7f020020;
+        public static final int powered_by_google_dark=0x7f020021;
+        public static final int powered_by_google_light=0x7f020022;
+        public static final int rectangle=0x7f020023;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b008f;
+        public static final int action_settings=0x7f0b0074;
+        public static final int adjust_height=0x7f0b0000;
+        public static final int adjust_width=0x7f0b0001;
         public static final int book_now=0x7f0b0010;
-        public static final int butPositionWhereAmI=0x7f0b007e;
-        public static final int butSmsSendIntent=0x7f0b0088;
-        public static final int butSmsSendProg=0x7f0b0089;
-        public static final int butSmsSendSelf=0x7f0b008b;
-        public static final int butWebserviceData=0x7f0b008c;
-        public static final int butWebserviceDataSynchron=0x7f0b008d;
-        public static final int buttonBackToIntent1=0x7f0b005e;
-        public static final int buttonCome=0x7f0b0075;
-        public static final int buttonContent=0x7f0b0056;
-        public static final int buttonCopyright=0x7f0b0057;
-        public static final int buttonCountry=0x7f0b005a;
-        public static final int buttonCreateNotification=0x7f0b007d;
-        public static final int buttonCreateNotificationData=0x7f0b007c;
-        public static final int buttonCustomTable=0x7f0b0036;
-        public static final int buttonDbSave=0x7f0b003e;
-        public static final int buttonDbShow=0x7f0b003f;
-        public static final int buttonDial=0x7f0b005c;
-        public static final int buttonDimension=0x7f0b0042;
-        public static final int buttonDivision=0x7f0b003a;
-        public static final int buttonGo=0x7f0b0076;
-        public static final int buttonLoadPass=0x7f0b004d;
-        public static final int buttonPrice=0x7f0b0045;
-        public static final int buttonSave=0x7f0b0041;
-        public static final int buttonSaveDimension=0x7f0b0048;
-        public static final int buttonSavePass=0x7f0b004c;
-        public static final int buttonWait=0x7f0b0040;
-        public static final int buyButton=0x7f0b000a;
-        public static final int buy_now=0x7f0b000f;
-        public static final int buy_with_google=0x7f0b000e;
-        public static final int calledNumber=0x7f0b0015;
-        public static final int cardDayLabel=0x7f0b0071;
-        public static final int cardDayValue=0x7f0b0072;
-        public static final int cardMonthLabel=0x7f0b0073;
-        public static final int cardMonthValue=0x7f0b0074;
-        public static final int card_base_empty_cardwithlist_text=0x7f0b001f;
-        public static final int card_children_simple_title=0x7f0b001b;
-        public static final int card_content_expand_layout=0x7f0b0024;
-        public static final int card_expand_inner_simple_title=0x7f0b0050;
-        public static final int card_header_button_expand=0x7f0b0019;
-        public static final int card_header_button_frame=0x7f0b0017;
-        public static final int card_header_button_other=0x7f0b001a;
-        public static final int card_header_button_overflow=0x7f0b0018;
-        public static final int card_header_inner_frame=0x7f0b0016;
-        public static final int card_header_inner_simple_title=0x7f0b0051;
-        public static final int card_header_layout=0x7f0b0023;
-        public static final int card_inner_base_empty_cardwithlist=0x7f0b0054;
-        public static final int card_inner_base_main_cardwithlist=0x7f0b0053;
-        public static final int card_inner_base_progressbar_cardwithlist=0x7f0b0055;
-        public static final int card_main_content_layout=0x7f0b0020;
-        public static final int card_main_inner_simple_title=0x7f0b0052;
-        public static final int card_main_layout=0x7f0b0022;
-        public static final int card_overlap=0x7f0b0025;
-        public static final int card_section_simple_title=0x7f0b001c;
-        public static final int card_shadow_layout=0x7f0b0021;
-        public static final int card_shadow_view=0x7f0b001d;
-        public static final int card_thumb_and_content_layout=0x7f0b0026;
-        public static final int card_thumbnail_image=0x7f0b001e;
-        public static final int card_thumbnail_layout=0x7f0b0027;
-        public static final int classic=0x7f0b0011;
-        public static final int colorBorder=0x7f0b006e;
-        public static final int content=0x7f0b0014;
-        public static final int copyright=0x7f0b002d;
-        public static final int customButton1=0x7f0b0037;
-        public static final int customTableLayout1=0x7f0b0038;
-        public static final int custumCheckBox1=0x7f0b0034;
-        public static final int custumEditText1=0x7f0b0030;
-        public static final int custumEditText2=0x7f0b0032;
-        public static final int dimLength=0x7f0b0046;
-        public static final int dimWidth=0x7f0b0047;
-        public static final int edit1=0x7f0b0069;
-        public static final int edit2=0x7f0b006b;
-        public static final int edit3=0x7f0b006d;
-        public static final int editCountry=0x7f0b005d;
-        public static final int editDbDivision=0x7f0b0039;
-        public static final int editDbFirst=0x7f0b003b;
-        public static final int editDbLast=0x7f0b003c;
-        public static final int editDbSalary=0x7f0b003d;
-        public static final int editNumber=0x7f0b005b;
-        public static final int editPass=0x7f0b004b;
-        public static final int editText1=0x7f0b004e;
-        public static final int editText2=0x7f0b004f;
-        public static final int etSmsAddress=0x7f0b0087;
-        public static final int etSmsMessage=0x7f0b008a;
-        public static final int grayscale=0x7f0b0012;
-        public static final int holo_dark=0x7f0b0005;
-        public static final int holo_light=0x7f0b0006;
-        public static final int hybrid=0x7f0b0004;
-        public static final int item1=0x7f0b0090;
-        public static final int item11=0x7f0b0091;
-        public static final int item12=0x7f0b0092;
-        public static final int item2=0x7f0b0093;
-        public static final int item3=0x7f0b0094;
-        public static final int label1=0x7f0b0068;
-        public static final int label2=0x7f0b006a;
-        public static final int label3=0x7f0b006c;
-        public static final int labelCountry=0x7f0b0059;
-        public static final int labelDimension=0x7f0b002c;
-        public static final int listView1=0x7f0b0085;
-        public static final int listViewFirstNames=0x7f0b004a;
-        public static final int listViewIntent=0x7f0b0058;
-        public static final int list_cardId=0x7f0b005f;
-        public static final int list_card_undobar=0x7f0b0060;
-        public static final int list_card_undobar_button=0x7f0b0062;
-        public static final int list_card_undobar_message=0x7f0b0061;
-        public static final int loginButton=0x7f0b0066;
-        public static final int loginResult=0x7f0b0067;
-        public static final int lvCardList=0x7f0b002b;
-        public static final int lvWebservice=0x7f0b008e;
-        public static final int match_parent=0x7f0b000c;
-        public static final int monochrome=0x7f0b0013;
-        public static final int myCardInnerTable=0x7f0b0070;
-        public static final int myCardInnerText=0x7f0b006f;
-        public static final int none=0x7f0b0000;
-        public static final int normal=0x7f0b0001;
-        public static final int pass=0x7f0b0065;
-        public static final int price=0x7f0b0043;
-        public static final int production=0x7f0b0007;
-        public static final int quantity=0x7f0b0044;
-        public static final int sandbox=0x7f0b0008;
-        public static final int satellite=0x7f0b0002;
-        public static final int selectionDetails=0x7f0b000b;
-        public static final int strict_sandbox=0x7f0b0009;
-        public static final int tableRow1=0x7f0b002e;
-        public static final int tableRow2=0x7f0b0031;
-        public static final int tableRow3=0x7f0b0033;
-        public static final int tableRow4=0x7f0b0035;
-        public static final int terrain=0x7f0b0003;
-        public static final int textPositionDateTime=0x7f0b0083;
-        public static final int textPositionLength=0x7f0b007f;
-        public static final int textPositionWhere=0x7f0b0084;
-        public static final int textPositionWidth=0x7f0b0081;
-        public static final int textView1=0x7f0b0049;
-        public static final int textView2=0x7f0b0080;
-        public static final int textView3=0x7f0b0082;
-        public static final int textView4=0x7f0b0064;
-        public static final int tv=0x7f0b002f;
-        public static final int tvNotification1=0x7f0b007a;
-        public static final int tvNotification2=0x7f0b007b;
-        public static final int txContent=0x7f0b0079;
-        public static final int txDescription=0x7f0b0078;
-        public static final int txSender=0x7f0b0077;
-        public static final int undobar=0x7f0b0028;
-        public static final int undobar_button=0x7f0b002a;
-        public static final int undobar_message=0x7f0b0029;
-        public static final int user=0x7f0b0063;
-        public static final int webView1=0x7f0b0086;
-        public static final int wrap_content=0x7f0b000d;
+        public static final int butPositionWhereAmI=0x7f0b0062;
+        public static final int butSmsSendIntent=0x7f0b006d;
+        public static final int butSmsSendProg=0x7f0b006e;
+        public static final int butSmsSendSelf=0x7f0b0070;
+        public static final int butWebserviceData=0x7f0b0071;
+        public static final int butWebserviceDataSynchron=0x7f0b0072;
+        public static final int buttonBackToIntent1=0x7f0b0046;
+        public static final int buttonCome=0x7f0b0059;
+        public static final int buttonContent=0x7f0b003e;
+        public static final int buttonCopyright=0x7f0b003f;
+        public static final int buttonCountry=0x7f0b0042;
+        public static final int buttonCreateNotification=0x7f0b0061;
+        public static final int buttonCreateNotificationData=0x7f0b0060;
+        public static final int buttonCustomTable=0x7f0b0024;
+        public static final int buttonDbSave=0x7f0b002c;
+        public static final int buttonDbShow=0x7f0b002d;
+        public static final int buttonDial=0x7f0b0044;
+        public static final int buttonDimension=0x7f0b0030;
+        public static final int buttonDivision=0x7f0b0028;
+        public static final int buttonGo=0x7f0b005a;
+        public static final int buttonLoadPass=0x7f0b003b;
+        public static final int buttonPrice=0x7f0b0033;
+        public static final int buttonSave=0x7f0b002f;
+        public static final int buttonSaveDimension=0x7f0b0036;
+        public static final int buttonSavePass=0x7f0b003a;
+        public static final int buttonWait=0x7f0b002e;
+        public static final int buyButton=0x7f0b000c;
+        public static final int buy_now=0x7f0b0011;
+        public static final int buy_with_google=0x7f0b0012;
+        public static final int calledNumber=0x7f0b0018;
+        public static final int cardDayLabel=0x7f0b0055;
+        public static final int cardDayValue=0x7f0b0056;
+        public static final int cardMonthLabel=0x7f0b0057;
+        public static final int cardMonthValue=0x7f0b0058;
+        public static final int classic=0x7f0b0014;
+        public static final int colorBorder=0x7f0b0052;
+        public static final int content=0x7f0b0017;
+        public static final int copyright=0x7f0b001b;
+        public static final int customButton1=0x7f0b0025;
+        public static final int customTableLayout1=0x7f0b0026;
+        public static final int custumCheckBox1=0x7f0b0022;
+        public static final int custumEditText1=0x7f0b001e;
+        public static final int custumEditText2=0x7f0b0020;
+        public static final int dimLength=0x7f0b0034;
+        public static final int dimWidth=0x7f0b0035;
+        public static final int donate_with_google=0x7f0b0013;
+        public static final int edit1=0x7f0b004d;
+        public static final int edit2=0x7f0b004f;
+        public static final int edit3=0x7f0b0051;
+        public static final int editCountry=0x7f0b0045;
+        public static final int editDbDivision=0x7f0b0027;
+        public static final int editDbFirst=0x7f0b0029;
+        public static final int editDbLast=0x7f0b002a;
+        public static final int editDbSalary=0x7f0b002b;
+        public static final int editNumber=0x7f0b0043;
+        public static final int editPass=0x7f0b0039;
+        public static final int editText1=0x7f0b003c;
+        public static final int editText2=0x7f0b003d;
+        public static final int etSmsAddress=0x7f0b006c;
+        public static final int etSmsMessage=0x7f0b006f;
+        public static final int grayscale=0x7f0b0015;
+        public static final int holo_dark=0x7f0b0007;
+        public static final int holo_light=0x7f0b0008;
+        public static final int hybrid=0x7f0b0003;
+        public static final int item1=0x7f0b0075;
+        public static final int item11=0x7f0b0076;
+        public static final int item12=0x7f0b0077;
+        public static final int item2=0x7f0b0078;
+        public static final int item3=0x7f0b0079;
+        public static final int label1=0x7f0b004c;
+        public static final int label2=0x7f0b004e;
+        public static final int label3=0x7f0b0050;
+        public static final int labelCountry=0x7f0b0041;
+        public static final int labelDimension=0x7f0b001a;
+        public static final int listView1=0x7f0b006a;
+        public static final int listViewFirstNames=0x7f0b0038;
+        public static final int listViewIntent=0x7f0b0040;
+        public static final int loginButton=0x7f0b004a;
+        public static final int loginResult=0x7f0b004b;
+        public static final int lvCardList=0x7f0b0019;
+        public static final int lvWebservice=0x7f0b0073;
+        public static final int match_parent=0x7f0b000e;
+        public static final int monochrome=0x7f0b0016;
+        public static final int myCardInnerTable=0x7f0b0054;
+        public static final int myCardInnerText=0x7f0b0053;
+        public static final int my_map=0x7f0b0069;
+        public static final int none=0x7f0b0002;
+        public static final int normal=0x7f0b0004;
+        public static final int pass=0x7f0b0049;
+        public static final int price=0x7f0b0031;
+        public static final int production=0x7f0b0009;
+        public static final int quantity=0x7f0b0032;
+        public static final int sandbox=0x7f0b000a;
+        public static final int satellite=0x7f0b0005;
+        public static final int selectionDetails=0x7f0b000d;
+        public static final int strict_sandbox=0x7f0b000b;
+        public static final int tableRow1=0x7f0b001c;
+        public static final int tableRow2=0x7f0b001f;
+        public static final int tableRow3=0x7f0b0021;
+        public static final int tableRow4=0x7f0b0023;
+        public static final int terrain=0x7f0b0006;
+        public static final int textPositionDateTime=0x7f0b0067;
+        public static final int textPositionLength=0x7f0b0063;
+        public static final int textPositionWhere=0x7f0b0068;
+        public static final int textPositionWidth=0x7f0b0065;
+        public static final int textView1=0x7f0b0037;
+        public static final int textView2=0x7f0b0064;
+        public static final int textView3=0x7f0b0066;
+        public static final int textView4=0x7f0b0048;
+        public static final int tv=0x7f0b001d;
+        public static final int tvNotification1=0x7f0b005e;
+        public static final int tvNotification2=0x7f0b005f;
+        public static final int txContent=0x7f0b005d;
+        public static final int txDescription=0x7f0b005c;
+        public static final int txSender=0x7f0b005b;
+        public static final int user=0x7f0b0047;
+        public static final int webView1=0x7f0b006b;
+        public static final int wrap_content=0x7f0b000f;
     }
     public static final class integer {
-        public static final int google_play_services_version=0x7f080002;
-        public static final int list_card_swipe_distance_divisor=0x7f080000;
-        public static final int list_card_undobar_hide_delay=0x7f080001;
+        public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
         public static final int activity_app1=0x7f030000;
         public static final int aktiv2=0x7f030001;
-        public static final int base_header_layout=0x7f030002;
-        public static final int base_list_expandable_children_layout=0x7f030003;
-        public static final int base_section_layout=0x7f030004;
-        public static final int base_shadow_layout=0x7f030005;
-        public static final int base_thumbnail_layout=0x7f030006;
-        public static final int base_withlist_empty=0x7f030007;
-        public static final int base_withlist_progress=0x7f030008;
-        public static final int card_base_layout=0x7f030009;
-        public static final int card_layout=0x7f03000a;
-        public static final int card_overlay_layout=0x7f03000b;
-        public static final int card_thumbnail_layout=0x7f03000c;
-        public static final int card_thumbnail_overlay_layout=0x7f03000d;
-        public static final int card_undo_layout=0x7f03000e;
-        public static final int cardlist=0x7f03000f;
-        public static final int catch_call=0x7f030010;
-        public static final int content=0x7f030011;
-        public static final int copyright=0x7f030012;
-        public static final int custom_table=0x7f030013;
-        public static final int custom_view_main=0x7f030014;
-        public static final int dbinput=0x7f030015;
-        public static final int dialog=0x7f030016;
-        public static final int dimension=0x7f030017;
-        public static final int example_list_item=0x7f030018;
-        public static final int files=0x7f030019;
-        public static final int inner_base_expand=0x7f03001a;
-        public static final int inner_base_header=0x7f03001b;
-        public static final int inner_base_main=0x7f03001c;
-        public static final int inner_base_main_cardwithlist=0x7f03001d;
-        public static final int intent1=0x7f03001e;
-        public static final int intent2=0x7f03001f;
-        public static final int list_card_layout=0x7f030020;
-        public static final int list_card_thumbnail_layout=0x7f030021;
-        public static final int list_card_undo_material_message=0x7f030022;
-        public static final int list_card_undo_materialmobile_message=0x7f030023;
-        public static final int list_card_undo_message=0x7f030024;
-        public static final int login=0x7f030025;
-        public static final int menu=0x7f030026;
-        public static final int my_card_layout=0x7f030027;
-        public static final int notication_receiver=0x7f030028;
-        public static final int notification_layout=0x7f030029;
-        public static final int notification_main=0x7f03002a;
-        public static final int position_main=0x7f03002b;
-        public static final int show_url=0x7f03002c;
-        public static final int sms_main=0x7f03002d;
-        public static final int webservice=0x7f03002e;
+        public static final int cardlist=0x7f030002;
+        public static final int catch_call=0x7f030003;
+        public static final int content=0x7f030004;
+        public static final int copyright=0x7f030005;
+        public static final int custom_table=0x7f030006;
+        public static final int custom_view_main=0x7f030007;
+        public static final int dbinput=0x7f030008;
+        public static final int dialog=0x7f030009;
+        public static final int dimension=0x7f03000a;
+        public static final int example_list_item=0x7f03000b;
+        public static final int files=0x7f03000c;
+        public static final int intent1=0x7f03000d;
+        public static final int intent2=0x7f03000e;
+        public static final int login=0x7f03000f;
+        public static final int menu=0x7f030010;
+        public static final int my_card_layout=0x7f030011;
+        public static final int notication_receiver=0x7f030012;
+        public static final int notification_layout=0x7f030013;
+        public static final int notification_main=0x7f030014;
+        public static final int position_main=0x7f030015;
+        public static final int show_url=0x7f030016;
+        public static final int sms_main=0x7f030017;
+        public static final int webservice=0x7f030018;
     }
     public static final class menu {
-        public static final int app1=0x7f0c0000;
-        public static final int menu1=0x7f0c0001;
-    }
-    public static final class plurals {
-        /**  Card selected item with CAB 
- Card selected item with CAB 
-         */
-        public static final int card_selected_items=0x7f090001;
-        /** <string name="undo_card">Card removed</string>
-<string name="undo_card">Karte entfernt</string>
-         */
-        public static final int list_card_undo_items=0x7f090000;
+        public static final int app1=0x7f0a0000;
+        public static final int menu1=0x7f0a0001;
     }
     public static final class raw {
-        public static final int vornamen=0x7f040000;
+        public static final int gtm_analytics=0x7f040000;
+        public static final int vornamen=0x7f040001;
     }
     public static final class string {
-        public static final int action_settings=0x7f070020;
-        public static final int app_name=0x7f07001f;
-        /**  Card with List 
+        public static final int accept=0x7f060002;
+        public static final int action_settings=0x7f060024;
+        public static final int app_name=0x7f060023;
+        /**   Text for notification shown when the Android Wear apps needs to be updated. Only shown on the wearable. [CHAR LIMIT=NONE] 
          */
-        public static final int card_empty_cardwithlist_text=0x7f070003;
-        public static final int card_progressbar_cardwithlist_text=0x7f070004;
+        public static final int common_android_wear_notification_needs_update_text=0x7f060009;
+        /**  Message in confirmation dialog informing user that they need to update
+        the Android Wear app [CHAR LIMIT=NONE] 
+         */
+        public static final int common_android_wear_update_text=0x7f060016;
+        /**  Title of confirmation dialog informing user that they need to update
+        the Android Wear app (from Play Store) [CHAR LIMIT=40] 
+         */
+        public static final int common_android_wear_update_title=0x7f060014;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_button=0x7f070010;
+        public static final int common_google_play_services_enable_button=0x7f060012;
         /**  Message in confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_enable_text=0x7f07000f;
+        public static final int common_google_play_services_enable_text=0x7f060011;
         /**  Title of confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_title=0x7f07000e;
+        public static final int common_google_play_services_enable_title=0x7f060010;
         /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
          */
-        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f070009;
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f06000b;
         /**  Button in confirmation dialog for installing Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_button=0x7f07000d;
+        public static final int common_google_play_services_install_button=0x7f06000f;
         /**  (For phones) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_phone=0x7f07000b;
+        public static final int common_google_play_services_install_text_phone=0x7f06000d;
         /**  (For tablets) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_tablet=0x7f07000c;
+        public static final int common_google_play_services_install_text_tablet=0x7f06000e;
         /**  Title of confirmation dialog informing user that they need to install
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_title=0x7f07000a;
+        public static final int common_google_play_services_install_title=0x7f06000c;
         /**  Message in confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_invalid_account_text=0x7f070016;
+        public static final int common_google_play_services_invalid_account_text=0x7f06001a;
         /**  Title of confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_invalid_account_title=0x7f070015;
+        public static final int common_google_play_services_invalid_account_title=0x7f060019;
         /**   Title for notification shown when GooglePlayServices needs to be enabled for an
         application to work. [CHAR LIMIT=70] 
          */
-        public static final int common_google_play_services_needs_enabling_title=0x7f070008;
+        public static final int common_google_play_services_needs_enabling_title=0x7f06000a;
         /**  Message in confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_network_error_text=0x7f070014;
+        public static final int common_google_play_services_network_error_text=0x7f060018;
         /**  Title of confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_network_error_title=0x7f070013;
+        public static final int common_google_play_services_network_error_title=0x7f060017;
         /**   Title for notification shown when GooglePlayServices needs to be installed
         for an application to work. [CHAR LIMIT=70] 
          */
-        public static final int common_google_play_services_notification_needs_installation_title=0x7f070006;
+        public static final int common_google_play_services_notification_needs_installation_title=0x7f060007;
         /**   Title for notification shown when GooglePlayServices needs to be updated for an
         application to work. [CHAR LIMIT=70] 
          */
-        public static final int common_google_play_services_notification_needs_update_title=0x7f070007;
+        public static final int common_google_play_services_notification_needs_update_title=0x7f060008;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
          */
-        public static final int common_google_play_services_notification_ticker=0x7f070005;
+        public static final int common_google_play_services_notification_ticker=0x7f060006;
         /**  Message in confirmation dialog informing user there is an unknown issue in Google Play
         services [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unknown_issue=0x7f070017;
-        /**  Message in confirmation dialog informing user that date on the device is not correct,
-    causing certificate checks to fail. [CHAR LIMIT=NONE] 
-         */
-        public static final int common_google_play_services_unsupported_date_text=0x7f07001a;
+        public static final int common_google_play_services_unknown_issue=0x7f06001b;
         /**  Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unsupported_text=0x7f070019;
+        public static final int common_google_play_services_unsupported_text=0x7f06001d;
         /**  Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_unsupported_title=0x7f070018;
+        public static final int common_google_play_services_unsupported_title=0x7f06001c;
         /**  Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_button=0x7f07001b;
+        public static final int common_google_play_services_update_button=0x7f06001e;
         /**  Message in confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_update_text=0x7f070012;
+        public static final int common_google_play_services_update_text=0x7f060015;
         /**  Title of confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_title=0x7f070011;
+        public static final int common_google_play_services_update_title=0x7f060013;
+        /**  Label for an action to open a notifications content on the phone [CHAR LIMIT=25] 
+         */
+        public static final int common_open_on_phone=0x7f060021;
         /**  Sign-in button text [CHAR LIMIT=15] 
          */
-        public static final int common_signin_button_text=0x7f07001c;
+        public static final int common_signin_button_text=0x7f06001f;
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
-        public static final int common_signin_button_text_long=0x7f07001d;
-        public static final int firstName=0x7f070022;
-        public static final int font_fontFamily_medium=0x7f070001;
-        public static final int font_fontFamily_regular=0x7f070000;
-        public static final int hello_world=0x7f070021;
-        public static final int lastName=0x7f070023;
-        /**  Undo Controller
- Undo Controller
-         */
-        public static final int list_card_undo_title=0x7f070002;
-        public static final int pass=0x7f070025;
-        public static final int user=0x7f070024;
+        public static final int common_signin_button_text_long=0x7f060020;
+        public static final int create_calendar_message=0x7f060005;
+        public static final int create_calendar_title=0x7f060004;
+        public static final int decline=0x7f060003;
+        public static final int firstName=0x7f060026;
+        public static final int hello_world=0x7f060025;
+        public static final int lastName=0x7f060027;
+        public static final int pass=0x7f060029;
+        public static final int store_picture_message=0x7f060001;
+        public static final int store_picture_title=0x7f060000;
+        public static final int user=0x7f060028;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
-        public static final int wallet_buy_button_place_holder=0x7f07001e;
+        public static final int wallet_buy_button_place_holder=0x7f060022;
     }
     public static final class style {
         /** 
@@ -934,118 +905,24 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0a002b;
+        public static final int AppBaseTheme=0x7f050008;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0a002c;
-        public static final int Theme_IAPTheme=0x7f0a0026;
-        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f0a0029;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f0a0028;
-        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f0a0027;
+        public static final int AppTheme=0x7f050009;
+        public static final int CardView=0x7f050005;
+        public static final int CardView_Dark=0x7f050007;
+        public static final int CardView_Light=0x7f050006;
+        public static final int Theme_IAPTheme=0x7f050000;
+        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f050003;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f050002;
+        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f050001;
         /** 
          Default style of the wallet fragment that will be used if not set explicitly
          when fragment is created
     
          */
-        public static final int WalletFragmentDefaultStyle=0x7f0a002a;
-        public static final int card=0x7f0a0000;
-        /** Style for simple title inner main view
- Style for Content ******************************************************
-Style for simple title inner main view
-         */
-        public static final int card_base_simple_title=0x7f0a000c;
-        /**  Style for Content ******************************************************
-Style for Content View
-         */
-        public static final int card_content_outer_layout=0x7f0a000b;
-        /** Style for simple title expand/collapse inner view
- Style for Expand/Collapse *************************************************
-Style for simple title expand/collapse inner view
-         */
-        public static final int card_expand_simple_title=0x7f0a0012;
-        /**  Button Base in Header
-         */
-        public static final int card_header_button_base=0x7f0a0007;
-        /**  Button to Expand/Collapse in Header 
-         */
-        public static final int card_header_button_base_expand=0x7f0a0009;
-        /**  Other Button in Header 
-         */
-        public static final int card_header_button_base_other=0x7f0a000a;
-        /**  Button Overflow in Header 
-         */
-        public static final int card_header_button_base_overflow=0x7f0a0008;
-        /**  Style for Header Buttons ***********************************************
-         */
-        public static final int card_header_button_frame=0x7f0a0006;
-        /** Style for Header Compound View 
-         */
-        public static final int card_header_compound_view=0x7f0a0004;
-        /**  Style for Header ******************************************************
-         */
-        public static final int card_header_outer_layout=0x7f0a0003;
-        /** Style for simple title inner header view
- Style for Header ******************************************************
-Style for simple title header inner view
-         */
-        public static final int card_header_simple_title=0x7f0a0005;
-        /**  Style for Hidden Expand Layout ****************************************
-         */
-        public static final int card_main_contentExpand=0x7f0a0011;
-        /**  Style for Main Layout ****************************************
- Style for Main Layout
-         */
-        public static final int card_main_layout=0x7f0a000d;
-        /**  Style for Main Layout kitkat
-         */
-        public static final int card_main_layout_kitkat=0x7f0a000e;
-        /**  Style for Main Layout with foreground selector
-         */
-        public static final int card_main_layout_foreground=0x7f0a000f;
-        /**  Style for Main Layout with foreground selector kitkat
-         */
-        public static final int card_main_layout_foreground_kitkat=0x7f0a0010;
-        /** Style for shadow image
-         */
-        public static final int card_shadow_image=0x7f0a0002;
-        /**  Style for Shadow ******************************************************
- Style for Shadow Compound view
-         */
-        public static final int card_shadow_outer_layout=0x7f0a0001;
-        public static final int card_thumbnail_compound_view=0x7f0a0015;
-        /**  Style used for Sectioned List 
-         */
-        public static final int card_section_container=0x7f0a001b;
-        public static final int card_section_title=0x7f0a001c;
-        /**  Style for Thumbnail ******************************************************
-         */
-        public static final int card_thumbnail_image=0x7f0a0013;
-        public static final int card_thumbnail_outer_layout=0x7f0a0014;
-        /**  Style for card with list 
-         */
-        public static final int cardwithlist=0x7f0a001a;
-        public static final int grid_card=0x7f0a0019;
-        /**  Style for Lists ******************************************************
-         */
-        public static final int list_card=0x7f0a0016;
-        /**  Base list 
-         */
-        public static final int list_card_base=0x7f0a0017;
-        /**  Thumbnail list 
-         */
-        public static final int list_card_thumbnail=0x7f0a0018;
-        /**  Used by UndoController in CardListView 
-         */
-        public static final int list_card_UndoBar=0x7f0a001d;
-        public static final int list_card_UndoBarButton=0x7f0a001f;
-        public static final int list_card_UndoBarButton_material=0x7f0a0022;
-        public static final int list_card_UndoBarButton_materialmobile=0x7f0a0025;
-        public static final int list_card_UndoBarMessage=0x7f0a001e;
-        public static final int list_card_UndoBarMessage_material=0x7f0a0021;
-        public static final int list_card_UndoBarMessage_materialmobile=0x7f0a0024;
-        public static final int list_card_UndoBar_material=0x7f0a0020;
-        public static final int list_card_UndoBar_materialmobile=0x7f0a0023;
+        public static final int WalletFragmentDefaultStyle=0x7f050004;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -1065,7 +942,7 @@ Style for simple title header inner view
            @see #AdsAttrs_adUnitId
          */
         public static final int[] AdsAttrs = {
-            0x7f010006, 0x7f010007, 0x7f010008
+            0x7f010000, 0x7f010001, 0x7f010002
         };
         /**
           <p>
@@ -1123,42 +1000,314 @@ containing a value of this type.
           @attr name com.example.app1:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
-        /**  Used for ForegroundLinearLayout 
- Refer to https://gist.github.com/chrisbanes/9091754 for original code 
+        /** Attributes that can be used with a CardView.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundInsidePadding android:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor com.example.app1:cardBackgroundColor}</code></td><td> Background color for CardView.</td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius com.example.app1:cardCornerRadius}</code></td><td> Corner radius for CardView.</td></tr>
+           <tr><td><code>{@link #CardView_cardElevation com.example.app1:cardElevation}</code></td><td> Elevation for CardView.</td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation com.example.app1:cardMaxElevation}</code></td><td> Maximum Elevation for CardView.</td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.example.app1:cardPreventCornerOverlap}</code></td><td> Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding com.example.app1:cardUseCompatPadding}</code></td><td> Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
+           <tr><td><code>{@link #CardView_contentPadding com.example.app1:contentPadding}</code></td><td> Inner padding between the edges of the Card and children of the CardView.</td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom com.example.app1:contentPaddingBottom}</code></td><td> Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft com.example.app1:contentPaddingLeft}</code></td><td> Inner padding between the left edge of the Card and children of the CardView.</td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight com.example.app1:contentPaddingRight}</code></td><td> Inner padding between the right edge of the Card and children of the CardView.</td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop com.example.app1:contentPaddingTop}</code></td><td> Inner padding between the top edge of the Card and children of the CardView.</td></tr>
            </table>
-           @see #ForegroundLinearLayout_android_foreground
-           @see #ForegroundLinearLayout_android_foregroundGravity
-           @see #ForegroundLinearLayout_android_foregroundInsidePadding
+           @see #CardView_cardBackgroundColor
+           @see #CardView_cardCornerRadius
+           @see #CardView_cardElevation
+           @see #CardView_cardMaxElevation
+           @see #CardView_cardPreventCornerOverlap
+           @see #CardView_cardUseCompatPadding
+           @see #CardView_contentPadding
+           @see #CardView_contentPaddingBottom
+           @see #CardView_contentPaddingLeft
+           @see #CardView_contentPaddingRight
+           @see #CardView_contentPaddingTop
          */
-        public static final int[] ForegroundLinearLayout = {
-            0x01010109, 0x01010200, 0x010103f1
+        public static final int[] CardView = {
+            0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028,
+            0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c,
+            0x7f01002d, 0x7f01002e, 0x7f01002f
         };
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#foreground}
-          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
-          @attr name android:foreground
+          <p>
+          @attr description
+           Background color for CardView. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:cardBackgroundColor
         */
-        public static final int ForegroundLinearLayout_android_foreground = 0;
+        public static final int CardView_cardBackgroundColor = 0;
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#foregroundGravity}
-          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
-          @attr name android:foregroundGravity
+          <p>
+          @attr description
+           Corner radius for CardView. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:cardCornerRadius
         */
-        public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
+        public static final int CardView_cardCornerRadius = 1;
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#foregroundInsidePadding}
-          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
-          @attr name android:foregroundInsidePadding
+          <p>
+          @attr description
+           Elevation for CardView. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:cardElevation
         */
-        public static final int ForegroundLinearLayout_android_foregroundInsidePadding = 2;
+        public static final int CardView_cardElevation = 2;
+        /**
+          <p>
+          @attr description
+           Maximum Elevation for CardView. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:cardMaxElevation
+        */
+        public static final int CardView_cardMaxElevation = 3;
+        /**
+          <p>
+          @attr description
+           Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:cardPreventCornerOverlap
+        */
+        public static final int CardView_cardPreventCornerOverlap = 5;
+        /**
+          <p>
+          @attr description
+           Add padding in API v21+ as well to have the same measurements with previous versions. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:cardUseCompatPadding
+        */
+        public static final int CardView_cardUseCompatPadding = 4;
+        /**
+          <p>
+          @attr description
+           Inner padding between the edges of the Card and children of the CardView. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:contentPadding
+        */
+        public static final int CardView_contentPadding = 6;
+        /**
+          <p>
+          @attr description
+           Inner padding between the bottom edge of the Card and children of the CardView. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:contentPaddingBottom
+        */
+        public static final int CardView_contentPaddingBottom = 10;
+        /**
+          <p>
+          @attr description
+           Inner padding between the left edge of the Card and children of the CardView. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:contentPaddingLeft
+        */
+        public static final int CardView_contentPaddingLeft = 7;
+        /**
+          <p>
+          @attr description
+           Inner padding between the right edge of the Card and children of the CardView. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:contentPaddingRight
+        */
+        public static final int CardView_contentPaddingRight = 8;
+        /**
+          <p>
+          @attr description
+           Inner padding between the top edge of the Card and children of the CardView. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:contentPaddingTop
+        */
+        public static final int CardView_contentPaddingTop = 9;
+        /**  Attributes for LoadingImageView 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.example.app1:circleCrop}</code></td><td>
+        Whether or not this view should have a circular clip applied
+        </td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.example.app1:imageAspectRatio}</code></td><td>
+        The fixed aspect ratio to use in aspect ratio adjustments.</td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.example.app1:imageAspectRatioAdjust}</code></td><td>
+        What kind of aspect ratio adjustment to do.</td></tr>
+           </table>
+           @see #LoadingImageView_circleCrop
+           @see #LoadingImageView_imageAspectRatio
+           @see #LoadingImageView_imageAspectRatioAdjust
+         */
+        public static final int[] LoadingImageView = {
+            0x7f010003, 0x7f010004, 0x7f010005
+        };
+        /**
+          <p>
+          @attr description
+          
+        Whether or not this view should have a circular clip applied
+        
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:circleCrop
+        */
+        public static final int LoadingImageView_circleCrop = 2;
+        /**
+          <p>
+          @attr description
+          
+        The fixed aspect ratio to use in aspect ratio adjustments.
+        
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.app1:imageAspectRatio
+        */
+        public static final int LoadingImageView_imageAspectRatio = 1;
+        /**
+          <p>
+          @attr description
+          
+        What kind of aspect ratio adjustment to do.  It must be one of "none", "adjust_width",
+        or "adjust_height".
+        
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
+<tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.example.app1:imageAspectRatioAdjust
+        */
+        public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MapAttrs.
            <p>Includes the following attributes:</p>
            <table>
@@ -1170,8 +1319,10 @@ containing a value of this type.
            <tr><td><code>{@link #MapAttrs_cameraTargetLng com.example.app1:cameraTargetLng}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_cameraTilt com.example.app1:cameraTilt}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_cameraZoom com.example.app1:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode com.example.app1:liteMode}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_mapType com.example.app1:mapType}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_uiCompass com.example.app1:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.example.app1:uiMapToolbar}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_uiRotateGestures com.example.app1:uiRotateGestures}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_uiScrollGestures com.example.app1:uiScrollGestures}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_uiTiltGestures com.example.app1:uiTiltGestures}</code></td><td></td></tr>
@@ -1185,8 +1336,10 @@ containing a value of this type.
            @see #MapAttrs_cameraTargetLng
            @see #MapAttrs_cameraTilt
            @see #MapAttrs_cameraZoom
+           @see #MapAttrs_liteMode
            @see #MapAttrs_mapType
            @see #MapAttrs_uiCompass
+           @see #MapAttrs_uiMapToolbar
            @see #MapAttrs_uiRotateGestures
            @see #MapAttrs_uiScrollGestures
            @see #MapAttrs_uiTiltGestures
@@ -1196,10 +1349,10 @@ containing a value of this type.
            @see #MapAttrs_zOrderOnTop
          */
         public static final int[] MapAttrs = {
-            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c,
-            0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010,
-            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014,
-            0x7f010015, 0x7f010016
+            0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009,
+            0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d,
+            0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011,
+            0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015
         };
         /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#cameraBearing}
@@ -1272,6 +1425,20 @@ containing a value of this type.
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
+          <p>This symbol is the offset where the {@link com.example.app1.R.attr#liteMode}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.app1:liteMode
+        */
+        public static final int MapAttrs_liteMode = 6;
+        /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
@@ -1304,7 +1471,21 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.app1:uiCompass
         */
-        public static final int MapAttrs_uiCompass = 6;
+        public static final int MapAttrs_uiCompass = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.example.app1.R.attr#uiMapToolbar}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.app1:uiMapToolbar
+        */
+        public static final int MapAttrs_uiMapToolbar = 15;
         /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
@@ -1318,7 +1499,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.app1:uiRotateGestures
         */
-        public static final int MapAttrs_uiRotateGestures = 7;
+        public static final int MapAttrs_uiRotateGestures = 8;
         /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
@@ -1332,7 +1513,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.app1:uiScrollGestures
         */
-        public static final int MapAttrs_uiScrollGestures = 8;
+        public static final int MapAttrs_uiScrollGestures = 9;
         /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
@@ -1346,7 +1527,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.app1:uiTiltGestures
         */
-        public static final int MapAttrs_uiTiltGestures = 9;
+        public static final int MapAttrs_uiTiltGestures = 10;
         /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
@@ -1360,7 +1541,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.app1:uiZoomControls
         */
-        public static final int MapAttrs_uiZoomControls = 10;
+        public static final int MapAttrs_uiZoomControls = 11;
         /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
@@ -1374,7 +1555,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.app1:uiZoomGestures
         */
-        public static final int MapAttrs_uiZoomGestures = 11;
+        public static final int MapAttrs_uiZoomGestures = 12;
         /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
@@ -1388,7 +1569,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.app1:useViewLifecycle
         */
-        public static final int MapAttrs_useViewLifecycle = 12;
+        public static final int MapAttrs_useViewLifecycle = 13;
         /**
           <p>This symbol is the offset where the {@link com.example.app1.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
@@ -1402,26 +1583,45 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.app1:zOrderOnTop
         */
-        public static final int MapAttrs_zOrderOnTop = 13;
+        public static final int MapAttrs_zOrderOnTop = 14;
         /**  Attributes for the WalletFragment &lt;fragment&gt; tag 
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_appTheme com.example.app1:appTheme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
            <tr><td><code>{@link #WalletFragmentOptions_environment com.example.app1:environment}</code></td><td> Google Wallet environment to use </td></tr>
            <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.example.app1:fragmentMode}</code></td><td> Fragment mode </td></tr>
            <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.example.app1:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_theme com.example.app1:theme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
            </table>
+           @see #WalletFragmentOptions_appTheme
            @see #WalletFragmentOptions_environment
            @see #WalletFragmentOptions_fragmentMode
            @see #WalletFragmentOptions_fragmentStyle
-           @see #WalletFragmentOptions_theme
          */
         public static final int[] WalletFragmentOptions = {
-            0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a
+            0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019
         };
+        /**
+          <p>
+          @attr description
+           Theme to be used for the Wallet selector 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.example.app1:appTheme
+        */
+        public static final int WalletFragmentOptions_appTheme = 0;
         /**
           <p>
           @attr description
@@ -1473,25 +1673,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.example.app1:fragmentStyle
         */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
-        /**
-          <p>
-          @attr description
-           Theme to be used for the Wallet selector 
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
-<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.example.app1:theme
-        */
-        public static final int WalletFragmentOptions_theme = 0;
         /**  Attributes that may be specified in a style resource to customize the look and feel of
          WalletFragment 
            <p>Includes the following attributes:</p>
@@ -1499,9 +1680,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.example.app1:buyButtonAppearance}</code></td><td> Appearance of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.example.app1:buyButtonAppearance}</code></td><td> The appearance of the buy button </td></tr>
            <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.example.app1:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.example.app1:buyButtonText}</code></td><td> Text on the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.example.app1:buyButtonText}</code></td><td> The text on the buy button </td></tr>
            <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.example.app1:buyButtonWidth}</code></td><td> Width of the buy button.</td></tr>
            <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.example.app1:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
            <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.example.app1:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
@@ -1524,14 +1705,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #WalletFragmentStyle_maskedWalletDetailsTextAppearance
          */
         public static final int[] WalletFragmentStyle = {
-            0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e,
-            0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022,
-            0x7f010023, 0x7f010024, 0x7f010025
+            0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d,
+            0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021,
+            0x7f010022, 0x7f010023, 0x7f010024
         };
         /**
           <p>
           @attr description
-           Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
+           The appearance of the buy button 
 
 
           <p>Must be one of the following constant values.</p>
@@ -1580,7 +1761,7 @@ containing a value of this type.
         /**
           <p>
           @attr description
-           Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
+           The text on the buy button 
 
 
           <p>Must be one of the following constant values.</p>
@@ -1592,6 +1773,7 @@ containing a value of this type.
 <tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
 <tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
+<tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
           <p>This is a private symbol.
           @attr name com.example.app1:buyButtonText
@@ -1726,118 +1908,5 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.example.app1:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
-        /**  Used in card with list
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #card_listItem_card_list_item_dividerHeight com.example.app1:card_list_item_dividerHeight}</code></td><td> Height of divider used in the list </td></tr>
-           </table>
-           @see #card_listItem_card_list_item_dividerHeight
-         */
-        public static final int[] card_listItem = {
-            0x7f010005
-        };
-        /**
-          <p>
-          @attr description
-           Height of divider used in the list 
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          <p>This is a private symbol.
-          @attr name com.example.app1:card_list_item_dividerHeight
-        */
-        public static final int card_listItem_card_list_item_dividerHeight = 0;
-        /** Attributes that can be used with a card_options.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #card_options_card_header_layout_resourceID com.example.app1:card_header_layout_resourceID}</code></td><td> Layout to build a Header.</td></tr>
-           <tr><td><code>{@link #card_options_card_layout_resourceID com.example.app1:card_layout_resourceID}</code></td><td> Layout to build a card.</td></tr>
-           <tr><td><code>{@link #card_options_card_shadow_layout_resourceID com.example.app1:card_shadow_layout_resourceID}</code></td><td> Layout to build a shadow.</td></tr>
-           <tr><td><code>{@link #card_options_card_thumbnail_layout_resourceID com.example.app1:card_thumbnail_layout_resourceID}</code></td><td> Layout to build a Thumbnail.</td></tr>
-           <tr><td><code>{@link #card_options_list_card_layout_resourceID com.example.app1:list_card_layout_resourceID}</code></td><td> Layout used by card in a ListView.</td></tr>
-           </table>
-           @see #card_options_card_header_layout_resourceID
-           @see #card_options_card_layout_resourceID
-           @see #card_options_card_shadow_layout_resourceID
-           @see #card_options_card_thumbnail_layout_resourceID
-           @see #card_options_list_card_layout_resourceID
-         */
-        public static final int[] card_options = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
-            0x7f010004
-        };
-        /**
-          <p>
-          @attr description
-           Layout to build a Header. Default value is @layout/base_header_layout 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.example.app1:card_header_layout_resourceID
-        */
-        public static final int card_options_card_header_layout_resourceID = 2;
-        /**
-          <p>
-          @attr description
-           Layout to build a card. Default value is  @layout/card_base_layout 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.example.app1:card_layout_resourceID
-        */
-        public static final int card_options_card_layout_resourceID = 0;
-        /**
-          <p>
-          @attr description
-           Layout to build a shadow. Default value is @layout/base_shadow_layout 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.example.app1:card_shadow_layout_resourceID
-        */
-        public static final int card_options_card_shadow_layout_resourceID = 1;
-        /**
-          <p>
-          @attr description
-           Layout to build a Thumbnail. Default value is @layout/base_thumbnail_layout 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.example.app1:card_thumbnail_layout_resourceID
-        */
-        public static final int card_options_card_thumbnail_layout_resourceID = 3;
-        /**
-          <p>
-          @attr description
-           Layout used by card in a ListView. Default value is  @layout/list_card_layout 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.example.app1:list_card_layout_resourceID
-        */
-        public static final int card_options_list_card_layout_resourceID = 4;
     };
 }
